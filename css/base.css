@@ -277,7 +277,7 @@ footer {
 .page-title {
   font-size: 18px;
   font-weight: 700;
-  margin: 0 0 16px 0;
+  margin: 0 0 20px 0;
   color: var(--site-bg-contrast);
 }
 
@@ -594,12 +594,17 @@ body.sidebar-open {
 }
 
 .footnote__name {
+  color: var(--secondary);
   font-weight: 700;
 }
 
 .footnote__rating,
 .footnote__role {
   font-size: 12px;
+}
+
+.footnote__rating b {
+  color: var(--secondary);
 }
 
 .footnote__rating {
@@ -612,7 +617,7 @@ body.sidebar-open {
 }
 
 .footnote__rating path {
-  fill: var(--border-color);
+  fill: var(--secondary);
 }
 
 .footnote__rating:not(:last-of-type) {

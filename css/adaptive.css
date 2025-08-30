@@ -43,6 +43,7 @@
   .header {
     padding-top: 8px;
     padding-bottom: 8px;
+    z-index: 1001;
   }
 
   .header__user {
@@ -70,11 +71,26 @@
   .sidebar {
     position: fixed;
     transform: translateY(0);
-    top: 64px;
+    top: 0px;
+    padding-top: 88px;
+    padding-bottom: 106px;
     right: auto;
     width: 240px;
     box-sizing: border-box;
     background-color: var(--site-bg-light);
+  }
+
+  .menu ul {
+    margin-top: 0;
+  }
+
+  .menu__exit {
+    position: absolute;
+    bottom: 16px;
+  }
+
+  .menu__link-profile::after {
+    display: none;
   }
 
   .main {
@@ -111,23 +127,5 @@
 
   .header__logo {
     font-size: 40px;
-  }
-
-  .sidebar {
-    padding-top: 24px;
-    padding-bottom: 106px;
-  }
-
-  .menu ul {
-    margin-top: 0;
-  }
-
-  .menu__exit {
-    position: absolute;
-    bottom: 16px;
-  }
-
-  .menu__link-profile::after {
-    display: none;
   }
 }
